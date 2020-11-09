@@ -29,6 +29,8 @@ Recreating the app in Phoenix, I found
 
 - the Phoenix app generator creates and app which is tightly-coupled to SQL, so you have to decouple it in numerous places
 (hat-tip to https://medium.com/swlh/setup-phoenix-on-docker-with-mongodb-d411e24dd78c)
+[correction - I could have created the app with the --no-ecto flag]
+
 
 - by default, the Elixir MongoDB app creates a row with an id consisting of BSON.ObjectId("HEX-NUMBER"); I couldn't
 find any way of searching using these ids, so I replaced them with just hex strings, eg. "5f9d79c5a9f74f0bfb2cb5cc"  
